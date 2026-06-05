@@ -70,9 +70,13 @@ export default function Header() {
     };
   }, []);
 
-  const handleLogout = () => {
-    document.cookie = 'sessionToken=; Max-Age=0; Path=/';
+  const handleLogout = async () => {
+    await fetch('/api/logout', {
+      method: 'POST',
+    });
+
     router.push('/login');
+    router.refresh();
   };
 
   return (
@@ -99,8 +103,8 @@ export default function Header() {
             {loading ? 'Loading...' : user?.name ?? 'User'}
           </span>
 
-          <span className="chevron">
-            {isProfileMenuOpen ? '▲' : '▼'}
+          <span className={`chevron ${isProfileMenuOpen ? 'open' : ''}`}>
+
           </span>
         </button>
 
@@ -128,31 +132,10 @@ export default function Header() {
               </div>
             </div>
 
-            <div className="profile-divider" />
-
             <nav className="profile-nav">
-              <Link
-                href="/profile"
-                className="profile-nav-item"
-              >
-                Profile
-              </Link>
 
-              <Link
-                href="/settings"
-                className="profile-nav-item"
-              >
-                Settings
-              </Link>
 
-              <Link
-                href="/help"
-                className="profile-nav-item"
-              >
-                Help
-              </Link>
-
-              <div className="profile-divider" />
+       
 
               <button
                 type="button"

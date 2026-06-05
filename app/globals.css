@@ -1229,9 +1229,6 @@ button.action-link {
   margin: 8px 0;
 }
 
-.profile-nav {
-  padding: 12px 0;
-}
 
 .profile-nav-item {
   display: flex;
@@ -1251,6 +1248,9 @@ button.action-link {
 .profile-nav-item.logout-btn {
   color: #dc2626;
   font-weight: 600;
+  width: 100%;
+  justify-content: center;
+  border: none;
 }
 
 .profile-nav-item.logout-btn:hover {
