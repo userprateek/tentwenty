@@ -1,0 +1,24 @@
+{
+  "name": "tentwenty",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^25.9.1",
+    "@types/react": "^19.2.16",
+    "@types/react-dom": "^19.2.3",
+    "next": "^16.2.7",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "typescript": "^6.0.3"
+  }
+}
