@@ -1,0 +1,12 @@
+{
+  "dateRanges": [
+    { value: "this-week", label: "This Week" },
+    { value: "last-week", label: "Last Week" },
+    { value: "this-month", label: "This Month" },
+    { value: "last-month", label: "Last Month" },
+    { value: "quarter-to-date", label: "Quarter to Date" },
+    { value: "year-to-date", label: "Year to Date" },
+    { value: "all-time", label: "All Time" },
+    { value: "custom", label: "Custom Range" }
+  ]
+}

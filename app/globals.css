@@ -1154,3 +1154,261 @@ a {
     width: auto;
   }
 }
+
+/* Profile Menu Styles */
+.user-menu-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.profile-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 12px;
+  width: 280px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  padding: 20px 24px;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.profile-avatar {
+  width: 48px;
+  height: 48px;
+  background: #dbeafe;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 16px;
+}
+
+.avatar-initial {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #2563eb;
+}
+
+.profile-info {
+  flex: 1;
+}
+
+.profile-name {
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: #111827;
+  margin-bottom: 4px;
+}
+
+.profile-email {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.profile-divider {
+  height: 1px;
+  background: #f3f4f6;
+  margin: 8px 0;
+}
+
+.profile-nav {
+  padding: 12px 0;
+}
+
+.profile-nav-item {
+  display: flex;
+  align-items: center;
+  padding: 12px 24px;
+  color: #374151;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.profile-nav-item:hover {
+  background-color: #f9fafb;
+}
+
+.profile-nav-item.logout-btn {
+  color: #dc2626;
+  font-weight: 600;
+}
+
+.profile-nav-item.logout-btn:hover {
+  background-color: #fef2f2;
+}
+
+/* Enhanced Filter Styles */
+.filter-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-right: 24px;
+}
+
+.filter-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #6b7280;
+  white-space: nowrap;
+}
+
+.select-button {
+  min-width: 160px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #6b7280;
+  font-size: 0.875rem;
+  font-weight: 400;
+  cursor: pointer;
+  padding: 0 12px;
+  transition: border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.select-button:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgb(37 99 235 / 20%);
+}
+
+.select-button .chevron {
+  width: 8px;
+  height: 8px;
+  border-width: 1.5px;
+  transition: transform 160ms ease;
+}
+
+.select-button[aria-expanded="true"] .chevron {
+  transform: rotate(180deg);
+}
+
+/* Page Size Group Styles */
+.page-size-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.page-size-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #6b7280;
+  white-space: nowrap;
+}
+
+/* Pagination Styles */
+.pagination {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.pagination button,
+.pagination .page-link {
+  min-width: 36px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  background: transparent;
+  color: #6b7280;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0 8px;
+  transition: background-color 160ms ease, color 160ms ease;
+}
+
+.pagination button:hover:not(:disabled),
+.pagination .page-link:hover:not(.disabled):not(.active) {
+  background-color: #f9fafb;
+  color: #111827;
+}
+
+.pagination button:disabled,
+.pagination .page-link.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.pagination .page-link.active {
+  background-color: #2563eb;
+  color: #ffffff;
+}
+
+.page-info {
+  font-size: 0.875rem;
+  color: #6b7280;
+  font-weight: 500;
+  margin: 0 12px;
+  white-space: nowrap;
+}
+
+/* Empty State Styles */
+.empty-state {
+  text-align: center;
+  padding: 40px 20px;
+  color: #6b7280;
+  font-size: 0.875rem;
+}
+
+/* Action Link Styles */
+.action-link {
+  color: #0057ff;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 2px 6px;
+  border-radius: 4px;
+  transition: background-color 160ms ease;
+}
+
+.action-link:hover {
+  background-color: #dbeafe;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .filter-row {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  
+  .filter-group {
+    margin-bottom: 12px;
+    min-width: 150px;
+  }
+  
+  .table-controls {
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 24px;
+  }
+  
+  .page-size-group,
+  .pagination {
+    min-width: 150px;
+  }
+}
+

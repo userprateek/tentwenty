@@ -1,0 +1,44 @@
+{
+  "timesheets": [
+    {
+      "id": 1,
+      "week": 1,
+      "dateRange": "1 - 5 January, 2024",
+      "status": "completed",
+      "hours": 40,
+      "userId": 1
+    },
+    {
+      "id": 2,
+      "week": 2,
+      "dateRange": "8 - 12 January, 2024",
+      "status": "completed",
+      "hours": 38,
+      "userId": 1
+    },
+    {
+      "id": 3,
+      "week": 3,
+      "dateRange": "15 - 19 January, 2024",
+      "status": "incomplete",
+      "hours": 20,
+      "userId": 1
+    },
+    {
+      "id": 4,
+      "week": 4,
+      "dateRange": "22 - 26 January, 2024",
+      "status": "completed",
+      "hours": 42,
+      "userId": 1
+    },
+    {
+      "id": 5,
+      "week": 5,
+      "dateRange": "28 January - 1 February, 2024",
+      "status": "missing",
+      "hours": 0,
+      "userId": 1
+    }
+  ]
+}

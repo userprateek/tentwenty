@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "info@userprateek.com",
+      "password": "password123",
+      "name": "Prateek Kumar",
+      "role": "admin"
+    },
+    {
+      "id": 2,
+      "email": "john.doe@example.com",
+      "password": "password123",
+      "name": "John Doe",
+      "role": "employee"
+    },
+    {
+      "id": 3,
+      "email": "jane.smith@example.com",
+      "password": "password123",
+      "name": "Jane Smith",
+      "role": "manager"
+    }
+  ]
+}
