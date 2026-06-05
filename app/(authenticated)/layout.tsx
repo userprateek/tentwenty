@@ -7,10 +7,10 @@ export default function AuthenticatedLayout({
   children: React.ReactNode;
 }) {
   return (
-    <>
+    <div className="app-page">
       <Header />
       {children}
       <Footer />
-    </>
+    </div>
   );
 }

@@ -455,6 +455,13 @@ a {
   line-height: 1;
 }
 
+button.action-link {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+}
+
 .table-controls {
   display: flex;
   align-items: center;
@@ -507,11 +514,12 @@ a {
 }
 
 .app-footer {
+  width: min(100% - 48px, 1636px);
   min-height: 109px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 20px;
+  margin: 20px auto 0;
   color: #6b7280;
   font-size: 1.125rem;
   font-weight: 400;
